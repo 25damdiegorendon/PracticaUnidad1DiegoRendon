@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6de62467-8864-4842-b8db-e13cf1e2b751" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jgoodies_common_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/LGoodDatePicker-10.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jgoodies-common-1.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jgoodies-forms-1.8.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/Bolsos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Controlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Modelo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrácticaUD1DiegoRendon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PrácticaUD1DiegoRendon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/Bolsos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/Bolsos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +28,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="242" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos" />
@@ -85,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1793201378190</updated>
       <workItem from="1793201380465" duration="1494000" />
-      <workItem from="1793538927105" duration="3355000" />
+      <workItem from="1793538927105" duration="6930000" />
+      <workItem from="1793566664631" duration="2770000" />
     </task>
     <servers />
   </component>
