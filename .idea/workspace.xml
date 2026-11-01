@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6de62467-8864-4842-b8db-e13cf1e2b751" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/Bandolera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/BolsoDeMano.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/Bolsos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/Bolsos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +76,7 @@
       <workItem from="1793201380465" duration="1494000" />
       <workItem from="1793538927105" duration="6930000" />
       <workItem from="1793566664631" duration="2770000" />
+      <workItem from="1793569787394" duration="1470000" />
     </task>
     <servers />
   </component>
