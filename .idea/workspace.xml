@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6de62467-8864-4842-b8db-e13cf1e2b751" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/BolsosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/BolsosControlador.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/BolsosModelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/BolsosModelo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/Ventana.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/Ventana.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosControlador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosModelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/util/Util.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +32,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="242" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="209" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos" />
@@ -42,13 +47,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\src\com\diegorendon\tiendadebolsos" />
-      <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\libs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\src\com\diegorendon\tiendadebolsos" />
       <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\src\com\diegorendon\tiendadebolsos\gui" />
+      <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\libs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\src\com\diegorendon\tiendadebolsos" />
       <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\libs" />
     </key>
   </component>
@@ -101,6 +106,7 @@
       <workItem from="1793623238666" duration="3915000" />
       <workItem from="1793640495427" duration="2673000" />
       <workItem from="1793643479433" duration="1747000" />
+      <workItem from="1793645659957" duration="6759000" />
     </task>
     <servers />
   </component>

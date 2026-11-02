@@ -17,6 +17,7 @@ public class Ventana {
     public JButton importarButton;
     public DatePicker fechaAdquisicionDPicker;
     public JTextArea descripcionTxt;
+    public JList listaBolsos;
 
     public JFrame frame;
     public DefaultListModel<Bolsos> dlmBolsos;
@@ -34,5 +35,8 @@ public class Ventana {
 
     private void initComponents() {
         dlmBolsos = new DefaultListModel<Bolsos>();
+        listaBolsos.setModel(dlmBolsos);
+
+
     }
 }

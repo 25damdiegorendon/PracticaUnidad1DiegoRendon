@@ -22,7 +22,7 @@ public class BolsosModelo {
 
     public ArrayList<Bolsos> listaBolsos;
 
-    public BolsosModelo() throws TransformerConfigurationException {
+    public BolsosModelo() {
         listaBolsos = new ArrayList<Bolsos>();
     }
 
@@ -46,6 +46,16 @@ public class BolsosModelo {
                 fechaAdquisicion, "Bandolera", descripcion);
 
         listaBolsos.add(nuevaBandolera);
+    }
+
+    //  Metodo existeBolso
+    public boolean existeBolso(String nombre) {
+        for (Bolsos unBolso : listaBolsos) {
+            if (unBolso.getNombre().equalsIgnoreCase(nombre)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     //exportar XML
