@@ -70,4 +70,5 @@ public abstract class Bolsos {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
 }

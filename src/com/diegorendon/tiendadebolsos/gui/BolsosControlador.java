@@ -1,9 +1,15 @@
 package com.diegorendon.tiendadebolsos.gui;
-
+import com.diegorendon.tiendadebolsos.base.Bandolera;
+import com.diegorendon.tiendadebolsos.base.BolsoDeMano;
 import com.diegorendon.tiendadebolsos.base.Bolsos;
 import com.diegorendon.tiendadebolsos.util.Util;
+import org.xml.sax.SAXException;
+
+import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
@@ -63,18 +69,20 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
         }
     }
 
-    private void addActionListener(BolsosControlador bolsosControlador) {
-        vista.nuevoButton.addActionListener(this);
-        vista.exportarButton.addActionListener(this);
-        vista.importarButton.addActionListener(this);
+    private void addActionListener(ActionListener listener) {
+        vista.nuevoButton.addActionListener(listener);
+        vista.exportarButton.addActionListener(listener);
+        vista.importarButton.addActionListener(listener);
+        vista.radioButton1.addActionListener(listener);
+        vista.radioButton2.addActionListener(listener);
     }
 
-    private void addListSelectionListener(BolsosControlador bolsosControlador) {
-        vista.listaBolsos.addListSelectionListener(this);
+    private void addListSelectionListener(ListSelectionListener listener) {
+        vista.listaBolsos.addListSelectionListener(listener);
     }
 
-    private void addWindowListener(BolsosControlador bolsosControlador) {
-        vista.frame.addWindowListener(this);
+    private void addWindowListener(WindowListener listener) {
+        vista.frame.addWindowListener(listener);
     }
 
     private void cargarDatosConfiguracion() throws IOException {
@@ -97,7 +105,111 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        String actionCommand = e.getActionCommand();
 
+        switch (actionCommand) {
+            case "Nuevo":
+                if (hayCamposVacios()) {
+                    Util.mensajeError("Los siguientes campos no pueden estar vacíos:\n"
+                            + "Nombre\nPrecio\nColor\nFecha de adquisición\nDescripción");
+                    break;
+                }
+
+                if (modelo.existeBolso(vista.nombreTxt.getText())) {
+                    Util.mensajeError("Ya existe un bolso con ese nombre:\n"
+                            + vista.nombreTxt.getText());
+                    break;
+                }
+
+                if (vista.radioButton1.isSelected()) {
+                    modelo.altaBolsoDeMano(
+                            vista.nombreTxt.getText(),
+                            Double.parseDouble(vista.precioTxt.getText()),
+                            vista.colorTxt.getText(),
+                            vista.fechaAdquisicionDPicker.getDate(),
+                            vista.descripcionTxt.getText());
+                } else if (vista.radioButton2.isSelected()) {
+                    modelo.altaBandolera(
+                            vista.nombreTxt.getText(),
+                            Double.parseDouble(vista.precioTxt.getText()),
+                            vista.colorTxt.getText(),
+                            vista.fechaAdquisicionDPicker.getDate(),
+                            vista.descripcionTxt.getText());
+                } else {
+                    Util.mensajeError("Debes seleccionar un tipo de bolso.");
+                    break;
+                }
+
+                limpiarCampos();
+                refrescar();
+                break;
+            case "Importar":
+                JFileChooser selectorFichero = Util.crearSelectorFichero(
+                        ultimaRutaExportada, "Archivos XML", "xml");
+                int opcion = selectorFichero.showOpenDialog(null);
+                if (opcion == JFileChooser.APPROVE_OPTION) {
+                    try {
+                        modelo.importarXML(selectorFichero.getSelectedFile());
+                    } catch (ParserConfigurationException ex) {
+                        ex.printStackTrace();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    } catch (SAXException ex) {
+                        ex.printStackTrace();
+                    }
+                    refrescar();
+                }
+                break;
+            case "Exportar":
+                JFileChooser selectorFichero2 = Util.crearSelectorFichero(
+                        ultimaRutaExportada, "Archivos XML", "xml");
+                int opcion2 = selectorFichero2.showSaveDialog(null);
+                if (opcion2 == JFileChooser.APPROVE_OPTION) {
+                    try {
+                        modelo.exportar(selectorFichero2.getSelectedFile());
+                        ultimaRutaExportada = selectorFichero2.getSelectedFile();
+                    } catch (ParserConfigurationException ex) {
+                        ex.printStackTrace();
+                    } catch (TransformerException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+                break;
+          }
+    }
+
+    @Override
+    public void valueChanged(ListSelectionEvent e) {
+        if (e.getValueIsAdjusting()) {
+            Bolsos bolsoSeleccionado = (Bolsos) vista.listaBolsos.getSelectedValue();
+
+            if (bolsoSeleccionado != null) {
+                vista.nombreTxt.setText(bolsoSeleccionado.getNombre());
+                vista.precioTxt.setText(String.valueOf(bolsoSeleccionado.getPrecio()));
+                vista.colorTxt.setText(bolsoSeleccionado.getColor());
+                vista.fechaAdquisicionDPicker.setDate(bolsoSeleccionado.getFechaAdquisicion());
+                vista.descripcionTxt.setText(bolsoSeleccionado.getDescripcion());
+
+                if (bolsoSeleccionado instanceof BolsoDeMano) {
+                    vista.radioButton1.doClick();
+                } else if (bolsoSeleccionado instanceof Bandolera) {
+                    vista.radioButton2.doClick();
+                }
+            }
+        }
+    }
+
+    @Override
+    public void windowClosing(WindowEvent e) {
+        int resp = Util.mensajeConfirmacion("¿Desea cerrar la ventana?", "Salir");
+        if (resp == JOptionPane.OK_OPTION) {
+            try {
+                guardarConfiguracion();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+            System.exit(0);
+        }
     }
 
     @Override
@@ -105,10 +217,6 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
 
     }
 
-    @Override
-    public void windowClosing(WindowEvent e) {
-
-    }
 
     @Override
     public void windowClosed(WindowEvent e) {
@@ -135,8 +243,5 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
 
     }
 
-    @Override
-    public void valueChanged(ListSelectionEvent e) {
 
-    }
 }
