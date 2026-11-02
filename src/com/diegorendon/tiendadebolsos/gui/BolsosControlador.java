@@ -1,4 +1,4 @@
 package com.diegorendon.tiendadebolsos.gui;
 
-public class Modelo {
+public class BolsosControlador {
 }

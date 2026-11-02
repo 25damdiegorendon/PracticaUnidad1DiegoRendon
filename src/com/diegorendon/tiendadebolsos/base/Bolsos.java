@@ -27,23 +27,47 @@ public abstract class Bolsos {
         return nombre;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public double getPrecio() {
         return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 
     public String getColor() {
         return color;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public LocalDate getFechaAdquisicion() {
         return fechaAdquisicion;
+    }
+
+    public void setFechaAdquisicion(LocalDate fechaAdquisicion) {
+        this.fechaAdquisicion = fechaAdquisicion;
     }
 
     public String getTipo() {
         return tipo;
     }
 
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     public String getDescripcion() {
         return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 }
