@@ -3,10 +3,8 @@ package com.diegorendon.tiendadebolsos.gui;
 import com.diegorendon.tiendadebolsos.base.Bandolera;
 import com.diegorendon.tiendadebolsos.base.BolsoDeMano;
 import com.diegorendon.tiendadebolsos.base.Bolsos;
-import org.w3c.dom.DOMImplementation;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Text;
+import org.w3c.dom.*;
+import org.xml.sax.SAXException;
 
 
 import javax.xml.parsers.DocumentBuilder;
@@ -16,6 +14,7 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -130,4 +129,41 @@ public class BolsosModelo {
         transformer.transform(source, resultado);
     }
 
-}
+    // importar XML
+
+    public void importarXML(File fichero) throws ParserConfigurationException, IOException, SAXException {
+        listaBolsos = new ArrayList<Bolsos>();
+        BolsoDeMano nuevoBolso = null;
+        Bandolera nuevaBandolera = null;
+
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document documento = builder.parse(fichero);
+
+        NodeList listaElementos = documento.getElementsByTagName("*");
+        for (int i = 0; i < listaElementos.getLength(); i++) {
+            Element nodoBolso = (Element) listaElementos.item(i);
+            if (nodoBolso.getTagName().equals("BolsoDeMano")) {
+              nuevoBolso = new BolsoDeMano();
+                nuevoBolso.setNombre(nodoBolso.getChildNodes().item(0).getTextContent());
+                nuevoBolso.setPrecio(Double.parseDouble(nodoBolso.getChildNodes().item(1).getTextContent()));
+                nuevoBolso.setColor(nodoBolso.getChildNodes().item(2).getTextContent());
+                nuevoBolso.setFechaAdquisicion(LocalDate.parse(nodoBolso.getChildNodes().item(3).getTextContent()));
+                nuevoBolso.setTipo(nodoBolso.getChildNodes().item(4).getTextContent());
+                nuevoBolso.setDescripcion(nodoBolso.getChildNodes().item(5).getTextContent());
+                listaBolsos.add(nuevoBolso);
+
+            } else {
+                nuevaBandolera = new Bandolera();
+                nuevaBandolera.setNombre(nodoBolso.getChildNodes().item(0).getTextContent());
+                nuevaBandolera.setPrecio(Double.parseDouble(nodoBolso.getChildNodes().item(1).getTextContent()));
+                nuevaBandolera.setColor(nodoBolso.getChildNodes().item(2).getTextContent());
+                nuevaBandolera.setFechaAdquisicion(LocalDate.parse(nodoBolso.getChildNodes().item(3).getTextContent()));
+                nuevaBandolera.setTipo(nodoBolso.getChildNodes().item(4).getTextContent());
+                nuevaBandolera.setDescripcion(nodoBolso.getChildNodes().item(5).getTextContent());
+                listaBolsos.add(nuevaBandolera);
+
+              }
+            }
+         }
+    }
