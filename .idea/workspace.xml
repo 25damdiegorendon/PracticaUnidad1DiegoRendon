@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6de62467-8864-4842-b8db-e13cf1e2b751" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bolsos.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/Principal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/Principal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/BolsosControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/BolsosControlador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/util/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/Bolsos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/Bolsos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/BolsosModelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/BolsosModelo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosModelo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,6 +103,8 @@
       <workItem from="1793643479433" duration="1747000" />
       <workItem from="1793645659957" duration="6759000" />
       <workItem from="1793655060852" duration="5155000" />
+      <workItem from="1793714567645" duration="2872000" />
+      <workItem from="1793717492988" duration="186000" />
     </task>
     <servers />
   </component>
