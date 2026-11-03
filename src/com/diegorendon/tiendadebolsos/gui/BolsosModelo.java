@@ -20,15 +20,35 @@ import java.util.ArrayList;
 
 public class BolsosModelo {
 
+    /** Lista de bolsos. */
+
     public ArrayList<Bolsos> listaBolsos;
+
+    /**
+     * Constructor que inicializa la lista.
+     */
 
     public BolsosModelo() {
         listaBolsos = new ArrayList<Bolsos>();
     }
 
+    /**
+     * Devuelve la lista de bolsos.
+     */
+
     public ArrayList<Bolsos> obtenerBolsos() {
         return listaBolsos;
     }
+
+    /**
+     * Metodo para annadir bolso de mano.
+     * Añade un bolso de mano a la lista.
+     *  nombre Nombre del bolso.
+     *  precio Precio del bolso.
+     *  color Color del bolso.
+     *  fechaAdquisicion Fecha de adquisición.
+     *  descripcion Descripción del bolso.
+     */
 
     public void altaBolsoDeMano(String nombre, double precio, String color,
                                 LocalDate fechaAdquisicion, String descripcion) {
@@ -39,6 +59,16 @@ public class BolsosModelo {
 
     }
 
+    /**
+     * Metodo para annadir bandolera.
+     * Añade un bolso de mano a la lista.
+     *  nombre Nombre del bolso.
+     *  precio Precio del bolso.
+     *  color Color del bolso.
+     *  fechaAdquisicion Fecha de adquisición.
+     *  descripcion Descripción del bolso.
+     */
+
     public void altaBandolera(String nombre, double precio, String color,
                               LocalDate fechaAdquisicion, String descripcion) {
 
@@ -48,7 +78,12 @@ public class BolsosModelo {
         listaBolsos.add(nuevaBandolera);
     }
 
-    //  Metodo existeBolso
+     /**
+      * meotodo existeBolso
+      * Comprueba si existe un bolso con ese nombre.
+      * Devuelve true si existe, false si no existe.
+      */
+
     public boolean existeBolso(String nombre) {
         for (Bolsos unBolso : listaBolsos) {
             if (unBolso.getNombre().equalsIgnoreCase(nombre)) {
@@ -58,7 +93,13 @@ public class BolsosModelo {
         return false;
     }
 
-    //exportar XML
+    /**
+     * Metodo exportar
+     * Exporta la lista de bolsos a un archivo XML.
+     * fichero Archivo donde se guardan los datos.
+     * ParserConfigurationException Si hay un error al crear el documento.
+     * TransformerException Si hay un error al guardar el XML.
+     */
 
     public void exportar(File fichero) throws ParserConfigurationException, TransformerException {
 
@@ -139,7 +180,14 @@ public class BolsosModelo {
         transformer.transform(source, resultado);
     }
 
-    // importar XML
+    /**
+     * Metodo importar.
+     * Importa los bolsos desde un archivo XML.
+     *  fichero Archivo XML que contiene los datos.
+     * ParserConfigurationException Si hay un error al crear el documento.
+     * IOException Si hay un error al leer el archivo.
+     * SAXException Si el XML tiene un formato incorrecto.
+     */
 
     public void importarXML(File fichero) throws ParserConfigurationException, IOException, SAXException {
         listaBolsos = new ArrayList<Bolsos>();

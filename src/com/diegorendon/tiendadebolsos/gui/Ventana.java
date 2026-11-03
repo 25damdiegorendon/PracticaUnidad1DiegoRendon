@@ -22,6 +22,10 @@ public class Ventana {
     public JFrame frame;
     public DefaultListModel<Bolsos> dlmBolsos;
 
+    /**
+     * Creo la ventana y la muestro.
+     */
+
     public Ventana() {
         frame = new JFrame("BOLSOS MVC");
         frame.setIconImage(new ImageIcon(getClass().getResource("/com/diegorendon/tiendadebolsos/resources/louis-vuitton.png")).getImage());
@@ -33,6 +37,10 @@ public class Ventana {
         frame.setLocationRelativeTo(null);
         initComponents();
         }
+
+    /**
+     * Inicializa los componentes de la ventana.
+     */
 
     private void initComponents() {
         dlmBolsos = new DefaultListModel<Bolsos>();

@@ -17,11 +17,21 @@ import java.awt.event.WindowListener;
 import java.io.*;
 import java.util.Properties;
 
+    /**
+    * Controla las acciones de la ventana.
+    */
+
 public class BolsosControlador implements ActionListener, ListSelectionListener, WindowListener {
 
     private Ventana vista;
     private BolsosModelo modelo;
     private File ultimaRutaExportada;
+
+        /**
+         * Creación del constructor añado y añado los listener.
+         * vista ventana del programa.
+         * modelo modelo de los bolsos.
+         */
 
     public BolsosControlador(Ventana vista, BolsosModelo modelo) {
         this.vista = vista;
@@ -38,7 +48,11 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
         addWindowListener(this);
     }
 
-
+        /**
+         * Método hayCamposVacios.
+         * Comprueba si hay campos vacíos.
+         * true si hay algún campo vacío.
+         */
 
     private boolean hayCamposVacios() {
         if (vista.nombreTxt.getText().isEmpty()
@@ -52,6 +66,11 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
         return false;
     }
 
+        /**
+         * Metodo limpiarCampos.
+         * Limpia los campos del formulario.
+         */
+
     private void limpiarCampos() {
         vista.nombreTxt.setText(null);
         vista.precioTxt.setText(null);
@@ -61,6 +80,11 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
         vista.nombreTxt.requestFocus();
     }
 
+        /**
+         * Metodo refrescar.
+         * Actualiza la lista de bolsos de la ventana.
+         */
+
     public void refrescar() {
         vista.dlmBolsos.clear();
 
@@ -68,6 +92,11 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
             vista.dlmBolsos.addElement(unBolso);
         }
     }
+
+        /**
+         * Añade los listeners a los botones.
+         * listener listener de las acciones.
+         */
 
     private void addActionListener(ActionListener listener) {
         vista.nuevoButton.addActionListener(listener);
@@ -77,13 +106,28 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
         vista.radioButton2.addActionListener(listener);
     }
 
+        /**
+         * Añade el listener a la lista de bolsos.
+         * listener listener de selección.
+         */
+
     private void addListSelectionListener(ListSelectionListener listener) {
         vista.listaBolsos.addListSelectionListener(listener);
     }
 
+        /**
+         * Añade el listener a la ventana.
+         * listener listener de la ventana.
+         */
+
     private void addWindowListener(WindowListener listener) {
         vista.frame.addWindowListener(listener);
     }
+
+        /**
+         * Carga la última ruta guardada.
+         * IOException si ocurre un error al leer el fichero.
+         */
 
     private void cargarDatosConfiguracion() throws IOException {
         Properties configuracion = new Properties();
@@ -91,9 +135,19 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
         ultimaRutaExportada = new File(configuracion.getProperty("ultimaRutaExportada"));
     }
 
+        /**
+         * Actualiza la última ruta exportada.
+         * ultimaRutaExportada ruta del fichero.
+         */
+
     private void actualizarDatosConfiguracion(File ultimaRutaExportada) {
         this.ultimaRutaExportada = ultimaRutaExportada;
     }
+
+        /**
+         * Guarda la configuración en un fichero.
+         * IOException si ocurre un error al guardar.
+         */
 
     private void guardarConfiguracion() throws IOException {
         Properties configuracion = new Properties();
@@ -101,7 +155,9 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
         configuracion.store(new PrintWriter("bolsos.conf"), "Datos configuracion bolsos");
     }
 
-    
+        /**
+         * Gestiona las acciones de los botones.
+         */
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -178,6 +234,10 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
           }
     }
 
+        /**
+         * Muestra los datos del bolso seleccionado.
+         */
+
     @Override
     public void valueChanged(ListSelectionEvent e) {
         if (e.getValueIsAdjusting()) {
@@ -198,6 +258,10 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
             }
         }
     }
+
+        /**
+         * Pregunta si se desea cerrar la ventana y guarda la configuración.
+         */
 
     @Override
     public void windowClosing(WindowEvent e) {
