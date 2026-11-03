@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6de62467-8864-4842-b8db-e13cf1e2b751" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bolsos.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/resources/louis-vuitton.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/BolsosModelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/BolsosModelo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosModelo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bolsos.conf" beforeDir="false" afterPath="$PROJECT_DIR$/bolsos.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/Ventana.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PrácticaUD1DiegoRendon/com/diegorendon/tiendadebolsos/gui/Ventana.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,13 +44,14 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\src\com\diegorendon\tiendadebolsos" />
-      <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\src\com\diegorendon\tiendadebolsos\gui" />
-      <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\libs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\src\com\diegorendon\tiendadebolsos" />
+      <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\libs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\src\com\diegorendon\tiendadebolsos\resources" />
+      <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\src\com\diegorendon\tiendadebolsos" />
+      <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\src\com\diegorendon\tiendadebolsos\gui" />
       <recent name="C:\Users\Keimy Rendon\IdeaProjects\PrácticaUD1DiegoRendon\libs" />
     </key>
   </component>
@@ -105,6 +108,8 @@
       <workItem from="1793655060852" duration="5155000" />
       <workItem from="1793714567645" duration="2872000" />
       <workItem from="1793717492988" duration="186000" />
+      <workItem from="1793717917888" duration="4330000" />
+      <workItem from="1793722354079" duration="72000" />
     </task>
     <servers />
   </component>

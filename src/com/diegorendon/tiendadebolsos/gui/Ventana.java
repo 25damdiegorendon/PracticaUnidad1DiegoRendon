@@ -24,6 +24,7 @@ public class Ventana {
 
     public Ventana() {
         frame = new JFrame("BOLSOS MVC");
+        frame.setIconImage(new ImageIcon(getClass().getResource("/com/diegorendon/tiendadebolsos/resources/louis-vuitton.png")).getImage());
         frame.setContentPane(panel1);
         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         frame.pack();
