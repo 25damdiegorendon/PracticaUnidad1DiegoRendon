@@ -18,6 +18,6 @@ public class BolsoDeMano extends Bolsos {
     @Override
     public String toString() {
         return "Bolso de mano: " + getNombre() + " "
-                + getPrecio() + " " + getColor();
+                + getPrecio() + " € " + getColor();
     }
 }

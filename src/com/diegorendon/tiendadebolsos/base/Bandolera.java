@@ -18,7 +18,7 @@ public class Bandolera extends Bolsos{
     @Override
     public String toString() {
         return "Bandolera: " + getNombre() + " "
-                + getPrecio() + " " + getColor();
+                + getPrecio() + " € " + getColor();
     }
 
 }

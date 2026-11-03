@@ -7,16 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6de62467-8864-4842-b8db-e13cf1e2b751" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PrácticaUD1DiegoRendon_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bolsos.conf" beforeDir="false" afterPath="$PROJECT_DIR$/bolsos.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PrácticaUD1DiegoRendon_jar/PrácticaUD1DiegoRendon.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PrácticaUD1DiegoRendon_jar/PrácticaUD1DiegoRendon.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/Bandolera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/Bandolera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/BolsoDeMano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/base/BolsoDeMano.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/BolsosModelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/gui/Ventana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/diegorendon/tiendadebolsos/util/Util.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,53 +90,6 @@
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/PrácticaUD1DiegoRendon_jar/PrácticaUD1DiegoRendon.jar" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="PrácticaUD1DiegoRendon" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="PrácticaUD1DiegoRendon" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JAR Application.PrácticaUD1DiegoRendon.jar" />
@@ -173,6 +122,7 @@
       <workItem from="1793722354079" duration="72000" />
       <workItem from="1793722568966" duration="41000" />
       <workItem from="1793722784045" duration="8158000" />
+      <workItem from="1793732430741" duration="1643000" />
     </task>
     <servers />
   </component>

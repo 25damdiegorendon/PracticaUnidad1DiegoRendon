@@ -223,7 +223,7 @@ public class BolsosControlador implements ActionListener, ListSelectionListener,
                 if (opcion2 == JFileChooser.APPROVE_OPTION) {
                     try {
                         modelo.exportar(selectorFichero2.getSelectedFile());
-                        ultimaRutaExportada = selectorFichero2.getSelectedFile();
+                        actualizarDatosConfiguracion(selectorFichero2.getSelectedFile());
                     } catch (ParserConfigurationException ex) {
                         ex.printStackTrace();
                     } catch (TransformerException ex) {
